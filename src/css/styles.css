@@ -144,3 +144,63 @@ main {
 .container .profile-results.hide {
   display: none;
 }
+
+/* Profile card: avatar à esquerda, textos à direita */
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-md);
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  width: 100%;
+  margin: var(--spacing-md) 0;
+}
+
+.profile-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 9999px;
+  object-fit: cover;
+  border: 4px solid rgba(255,255,255,0.8);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  flex-shrink: 0;
+}
+
+.profile-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-info h2 {
+  font-size: var(--font-lg);
+  margin: 0 0 0.25rem 0;
+}
+
+.profile-info p {
+  margin: 0;
+  color: var(--muted-foreground);
+  font-size: var(--font-sm);
+}
+
+/* Responsividade: em telas pequenas empilha verticalmente */
+@media (max-width: 640px) {
+  .profile-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-info {
+    align-items: center;
+  }
+
+  .profile-avatar {
+    width: 112px;
+    height: 112px;
+  }
+}
