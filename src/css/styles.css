@@ -224,3 +224,40 @@ main {
   font-size: 2rem;
 }
 
+/* Estilos para a seção de repositórios */
+.profile-repos {
+  margin-top: var(--spacing-md);
+  text-align: center;
+  color: #000;
+ 
+}
+
+.profile-repos h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 16px;
+  color: #000;
+}
+
+.profile-repos ul {
+  list-style: disc inside;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+   list-style: none;
+}
+
+.profile-repos li {
+  margin: 0.25rem 0;
+  color: #000;
+}
+
+.profile-repos a {
+  color: #000;
+  text-decoration: none;
+}
+
+.profile-repos a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
